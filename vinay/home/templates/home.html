@@ -1,0 +1,7 @@
+<!-- templates/form.html -->
+<form method="post" action="{% url 'form_submission' %}">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <button type="submit">Submit</button>
+</form>
